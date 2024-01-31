@@ -13,6 +13,10 @@
 		187E05F12B621E3300BF57EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187E05EF2B621E3300BF57EF /* Main.storyboard */; };
 		187E05F32B621E3500BF57EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 187E05F22B621E3500BF57EF /* Assets.xcassets */; };
 		187E05F62B621E3500BF57EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 187E05F42B621E3500BF57EF /* LaunchScreen.storyboard */; };
+		187E06022B6226CC00BF57EF /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E06012B6226CC00BF57EF /* CreateAccountViewController.swift */; };
+		187E06042B62274300BF57EF /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E06032B62274300BF57EF /* MainPageViewController.swift */; };
+		187E06062B622BA100BF57EF /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E06052B622BA100BF57EF /* MainCollectionViewCell.swift */; };
+		187E06092B623BF600BF57EF /* detailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187E06082B623BF600BF57EF /* detailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		187E05F22B621E3500BF57EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		187E05F52B621E3500BF57EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		187E05F72B621E3500BF57EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		187E06012B6226CC00BF57EF /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		187E06032B62274300BF57EF /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		187E06052B622BA100BF57EF /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		187E06082B623BF600BF57EF /* detailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +67,11 @@
 				187E05E92B621E3300BF57EF /* AppDelegate.swift */,
 				187E05EB2B621E3300BF57EF /* SceneDelegate.swift */,
 				187E05ED2B621E3300BF57EF /* ViewController.swift */,
+				187E06012B6226CC00BF57EF /* CreateAccountViewController.swift */,
+				187E06032B62274300BF57EF /* MainPageViewController.swift */,
+				187E06082B623BF600BF57EF /* detailsViewController.swift */,
 				187E05EF2B621E3300BF57EF /* Main.storyboard */,
+				187E06052B622BA100BF57EF /* MainCollectionViewCell.swift */,
 				187E05F22B621E3500BF57EF /* Assets.xcassets */,
 				187E05F42B621E3500BF57EF /* LaunchScreen.storyboard */,
 				187E05F72B621E3500BF57EF /* Info.plist */,
@@ -138,6 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187E06042B62274300BF57EF /* MainPageViewController.swift in Sources */,
+				187E06062B622BA100BF57EF /* MainCollectionViewCell.swift in Sources */,
+				187E06092B623BF600BF57EF /* detailsViewController.swift in Sources */,
+				187E06022B6226CC00BF57EF /* CreateAccountViewController.swift in Sources */,
 				187E05EE2B621E3300BF57EF /* ViewController.swift in Sources */,
 				187E05EA2B621E3300BF57EF /* AppDelegate.swift in Sources */,
 				187E05EC2B621E3300BF57EF /* SceneDelegate.swift in Sources */,

@@ -7,23 +7,29 @@
 
 import UIKit
 
-class detailsViewController: UIViewController {
 
+class detailsViewController: UIViewController {
+    var webv = String()
+    var name = String()
+    var population = String()
+    @IBOutlet weak var populationoutlet: UILabel!
+    @IBOutlet weak var imagev: UIImageView!
+    @IBOutlet weak var namelabel: UILabel!
+    @IBOutlet weak var capitallabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        imagev.image = img(link: webv)
+        namelabel.text = name
+        populationoutlet.text = population
+        
+//        cell.imageview.image = img(link: (obj1[indexPath.row].flags.png))
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    func img(link: String) -> UIImage? {
+            let url1 = URL(string: link)
+            let data = try? Data(contentsOf: url1! as URL)
+            return UIImage(data: data!)
+        }
 
 }
