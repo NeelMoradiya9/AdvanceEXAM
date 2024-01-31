@@ -11,6 +11,5 @@ class MainCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var officiallabel: UILabel!
     @IBOutlet weak var namelabel: UILabel!
-    
     @IBOutlet weak var imageview: UIImageView!
 }

@@ -12,18 +12,37 @@ class detailsViewController: UIViewController {
     var webv = String()
     var name = String()
     var population = String()
+    var official = String()
+    var independent = String()
+    var status = String()
+    var unMember = String()
+    var currency = String()
+    var region = String()
+    var subregion = String()
     @IBOutlet weak var populationoutlet: UILabel!
     @IBOutlet weak var imagev: UIImageView!
     @IBOutlet weak var namelabel: UILabel!
-    @IBOutlet weak var capitallabel: UILabel!
-    
+    @IBOutlet weak var officiallabeloutlet: UILabel!
+    @IBOutlet weak var independentlabeloutlet: UILabel!
+    @IBOutlet weak var statuslabeloutlet: UILabel!
+    @IBOutlet weak var unMemberlabeloutlet: UILabel!
+    @IBOutlet weak var currencylabeloutlet: UILabel!
+    @IBOutlet weak var regionlabeloutlet: UILabel!
+    @IBOutlet weak var subregienlabeloutlet: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         imagev.image = img(link: webv)
         namelabel.text = name
         populationoutlet.text = population
+        officiallabeloutlet.text = official
+        independentlabeloutlet.text = independent
+        statuslabeloutlet.text = status
+        unMemberlabeloutlet.text = unMember
+        currencylabeloutlet.text = currency
+        regionlabeloutlet.text = region
+        subregienlabeloutlet .text = subregion
         
-//        cell.imageview.image = img(link: (obj1[indexPath.row].flags.png))
+        
     }
     
     func img(link: String) -> UIImage? {

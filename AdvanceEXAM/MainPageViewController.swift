@@ -396,15 +396,22 @@ class MainPageViewController: UIViewController,UICollectionViewDelegate , UIColl
         return UIImage(data: data!)
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        navigation(link: obj1[indexPath.row].flags.png, label: obj1[indexPath.row].name.common, populationlabel: String(obj1[indexPath.row].population))
+        navigation(link: obj1[indexPath.row].flags.png, label: obj1[indexPath.row].name.common, populationlabel: String(obj1[indexPath.row].population), official1: obj1[indexPath.row].name.official, independent1: String(obj1[indexPath.row].independent ?? false), status1: obj1[indexPath.row].status.rawValue, unMember1: String(obj1[indexPath.row].unMember), currency1: String(obj1[indexPath.row].currencies?.eur?.name ?? "Not Idea"), region1: (obj1[indexPath.row].region.rawValue), subregion1: obj1[indexPath.row].subregion ?? "Not Idea")
     }
     
-    func navigation(link:String , label:String , populationlabel:String , capital1 : String){
+    func navigation(link:String , label:String , populationlabel:String , official1 : String,independent1:String,status1:String,unMember1:String,currency1:String,region1:String,subregion1:String){
         let a  = storyboard?.instantiateViewController(identifier: "detailsViewController")as!
         detailsViewController
         a.webv = link
         a.name = label
         a.population = populationlabel
+        a.official = official1
+        a.independent = independent1
+        a.status = status1
+        a.unMember = unMember1
+        a.currency = currency1
+        a.region = region1
+        a.subregion = subregion1
         navigationController?.pushViewController(a, animated: true)
         
     }
